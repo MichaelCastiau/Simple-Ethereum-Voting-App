@@ -20,8 +20,4 @@ export class CandidatesComponent implements OnInit {
     ngOnInit(): void {
         this.candidates = this.blockChain.getCandidates();
     }
-
-    getNumberOfVotesFor(name : string) : number {
-        return this.blockChain.getTotalVotes(name);
-    }
 }
