@@ -1,0 +1,17 @@
+<div class="row">
+    <h2>Candidates</h2>
+    <table class="table table-striped">
+        <tr>
+            <th>Candidate Name</th>
+            <th># Votes</th>
+        </tr>
+        <tr *ngFor="let candidate of candidates">
+            <td>
+                {{ candidate.name }}
+            </td>
+            <td>
+                {{ candidate.votes | async }}
+            </td>
+        </tr>
+    </table>
+</div>
